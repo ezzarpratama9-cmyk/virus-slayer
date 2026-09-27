@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar brutalist untuk tabel engine breakdown */
+.brutal-scroll::-webkit-scrollbar {
+  width: 14px;
+}
+
+.brutal-scroll::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-left: 4px solid #000000;
+}
+
+.brutal-scroll::-webkit-scrollbar-thumb {
+  background: #000000;
+  border: 3px solid #ffffff;
+}
+
+.brutal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #00e5ff;
+}
+
+/* Focus ring yang tetap terlihat, brutalist style, untuk aksesibilitas keyboard */
+:focus-visible {
+  outline: 4px solid #00e5ff;
+  outline-offset: 2px;
+}
+
+/* Background putih bertekstur dot-grid, ganti dari solid kuning */
+.dot-grid-bg {
+  background-color: #ffffff;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.09) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
