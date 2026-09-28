@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "nodejs";
+export const maxDuration = 60;
 
 const VT_BASE = "https://www.virustotal.com/api/v3";
 const MAX_FILE_SIZE = 32 * 1024 * 1024; // 32MB
