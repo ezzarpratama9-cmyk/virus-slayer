@@ -335,7 +335,7 @@ function SiteFooter() {
   return (
     <footer className="mt-16 border-t-4 border-black bg-brutal-black px-4 py-5 text-center">
       <p className="font-body text-xs font-bold uppercase tracking-wide text-white/50">
-        SCANNER_VIRUS v1.0.0 // Powered by VirusTotal API v3
+        VIRUS_SLAYER v1.0.0 // Powered by VirusTotal API v3
       </p>
     </footer>
   );
@@ -458,7 +458,7 @@ export default function Home() {
           </div>
           <div>
             <h1 className="font-display text-4xl font-extrabold uppercase leading-none tracking-tight text-black sm:text-5xl">
-              SCANNER_VIRUS
+              VIRUS_SLAYER
             </h1>
             <p className="mt-1 font-body text-sm font-medium text-black/70">
               Brutalist file &amp; URL security scanner — powered by VirusTotal v3
