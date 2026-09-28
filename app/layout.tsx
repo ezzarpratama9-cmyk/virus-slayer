@@ -17,7 +17,7 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "VIRUS_SLAYER.EXE — Brutalist Security Scanner",
+  title: "SCANNER_VIRUS — Brutalist Security Scanner",
   description:
     "Scan URL dan file secara instan menggunakan VirusTotal API v3. Antarmuka neo-brutalism, hasil deteksi real-time dari puluhan mesin antivirus.",
 };
