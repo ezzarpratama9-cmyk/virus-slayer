@@ -335,7 +335,7 @@ function SiteFooter() {
   return (
     <footer className="mt-16 border-t-4 border-black bg-brutal-black px-4 py-5 text-center">
       <p className="font-body text-xs font-bold uppercase tracking-wide text-white/50">
-        VIRUS_SLAYER.EXE v1.0.0 // Powered by VirusTotal API v3
+        SCANNER_VIRUS v1.0.0 // Powered by VirusTotal API v3
       </p>
     </footer>
   );
