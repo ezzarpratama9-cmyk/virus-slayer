@@ -458,7 +458,7 @@ export default function Home() {
           </div>
           <div>
             <h1 className="font-display text-4xl font-extrabold uppercase leading-none tracking-tight text-black sm:text-5xl">
-              VIRUS_SLAYER<span className="text-brutal-red">.EXE</span>
+              SCANNER_VIRUS
             </h1>
             <p className="mt-1 font-body text-sm font-medium text-black/70">
               Brutalist file &amp; URL security scanner — powered by VirusTotal v3
