@@ -9,9 +9,6 @@
   --color-brutal-black: #000000;
   --color-brutal-white: #ffffff;
 
-  --font-display: "Syne", system-ui, sans-serif;
-  --font-body: "Space Grotesk", system-ui, sans-serif;
-
   --shadow-brutal: 6px 6px 0px 0px rgba(0, 0, 0, 1);
   --shadow-brutal-sm: 2px 2px 0px 0px rgba(0, 0, 0, 1);
   --shadow-brutal-lg: 10px 10px 0px 0px rgba(0, 0, 0, 1);
@@ -21,6 +18,13 @@
   --animate-glitch: glitch 0.28s infinite;
   --animate-pulse-brutal: pulse-brutal 1.1s ease-in-out infinite;
   --animate-spin-slow: spin-slow 2.4s linear infinite;
+}
+
+/* @theme inline is required (not plain @theme) because these tokens
+   reference the next/font CSS variables set on <body> in layout.tsx */
+@theme inline {
+  --font-display: var(--font-syne), system-ui, sans-serif;
+  --font-body: var(--font-space-grotesk), system-ui, sans-serif;
 }
 
 @keyframes marquee {
