@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "nodejs";
+export const maxDuration = 60;
 
 const VT_BASE = "https://www.virustotal.com/api/v3";
 const POLL_ATTEMPTS = 10;
