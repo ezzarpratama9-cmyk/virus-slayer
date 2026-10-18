@@ -6,11 +6,11 @@ import {
   Upload,
   ShieldCheck,
   ShieldAlert,
-  Loader2,
-  AlertTriangle,
+  LoaderCircle,
+  TriangleAlert,
   Zap,
   Bug,
-  HelpCircle,
+  CircleHelp,
   FileText,
   X,
   ExternalLink,
@@ -72,9 +72,9 @@ function sortEngines(engines: EngineResult[]): EngineResult[] {
 function EngineIcon({ category }: { category: string }) {
   if (category === "malicious") return <Bug className="h-4 w-4 shrink-0 text-brutal-red" />;
   if (category === "suspicious")
-    return <AlertTriangle className="h-4 w-4 shrink-0 text-[#FF8C00]" />;
+    return <TriangleAlert className="h-4 w-4 shrink-0 text-[#FF8C00]" />;
   if (category === "harmless") return <ShieldCheck className="h-4 w-4 shrink-0 text-black" />;
-  return <HelpCircle className="h-4 w-4 shrink-0 text-black/40" />;
+  return <CircleHelp className="h-4 w-4 shrink-0 text-black/40" />;
 }
 
 function Marquee() {
@@ -113,7 +113,7 @@ function BrutalAlert({
       )}
       role="alert"
     >
-      <AlertTriangle className="mt-0.5 h-6 w-6 shrink-0 animate-pulse-brutal text-black" />
+      <TriangleAlert className="mt-0.5 h-6 w-6 shrink-0 animate-pulse-brutal text-black" />
       <div className="flex-1">
         <p className="font-display text-sm font-extrabold uppercase tracking-wide text-black">
           {variant === "rate-limit" ? "Rate Limit Exceeded" : "Scan Gagal"}
@@ -335,7 +335,7 @@ function SiteFooter() {
   return (
     <footer className="mt-16 border-t-4 border-black bg-brutal-black px-4 py-5 text-center">
       <p className="font-body text-xs font-bold uppercase tracking-wide text-white/50">
-        VIRUS_SLAYER v1.0.0 // Powered by VirusTotal API v3
+        VIRUS_SLAYER.EXE v1.0.0 // Powered by VirusTotal API v3
       </p>
     </footer>
   );
@@ -458,7 +458,7 @@ export default function Home() {
           </div>
           <div>
             <h1 className="font-display text-4xl font-extrabold uppercase leading-none tracking-tight text-black sm:text-5xl">
-              VIRUS_SLAYER
+              VIRUS_SLAYER<span className="text-brutal-red">.EXE</span>
             </h1>
             <p className="mt-1 font-body text-sm font-medium text-black/70">
               Brutalist file &amp; URL security scanner — powered by VirusTotal v3
@@ -584,7 +584,7 @@ export default function Home() {
         >
           {loading ? (
             <>
-              <Loader2 className="h-6 w-6 animate-spin-slow" />
+              <LoaderCircle className="h-6 w-6 animate-spin-slow" />
               Menganalisis...
             </>
           ) : (

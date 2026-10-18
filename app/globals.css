@@ -20,8 +20,6 @@
   --animate-spin-slow: spin-slow 2.4s linear infinite;
 }
 
-/* @theme inline is required (not plain @theme) because these tokens
-   reference the next/font CSS variables set on <body> in layout.tsx */
 @theme inline {
   --font-display: var(--font-syne), system-ui, sans-serif;
   --font-body: var(--font-space-grotesk), system-ui, sans-serif;
